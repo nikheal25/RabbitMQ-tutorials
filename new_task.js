@@ -12,7 +12,7 @@ amqp.connect('amqp://localhost', function (error0, connection) {
     }
 
     var queue = 'task_queue';
-    var msg = process.argv.slice(2).join(' ') || 'Hello World!';
+    var msg = process.argv.slice(2).join(' ') || 'Hello World!...';
 
     channel.assertQueue(queue, {
       durable: true,
